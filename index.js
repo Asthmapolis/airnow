@@ -243,7 +243,7 @@ module.exports = function(options){
 			
 			// reformat the date to the expected format of airnow API
 			if (_.has(options, "date")){
-				options.date = moment(options.date).format("YYYY-MM-DD")
+				options.date = moment(options.date).format("YYYY-MM-DDTHHZ");
 			}
 			
 			// send with brute force retry
@@ -282,7 +282,7 @@ module.exports = function(options){
 			
 			// reformat the date to the expected format of airnow API
 			if (_.has(options, "date")){
-				options.date = moment(options.date).format("YYYY-MM-DD")
+				options.date = moment(options.date).format("YYYY-MM-DDTHHZ");
 			}
 			
 			// send with brute force retry
